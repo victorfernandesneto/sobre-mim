@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sobre mim</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <div class="container">
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu">
+                    <span class="cabecalho__menu-hamburger" class="container__imagem"></span>
+                </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu__titulo">
+                        Categorias
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">FILMES</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">ANIMES</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">BOXE</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">EXPERIÊNCIA PROFISSIONAL</a>
+                    </li>
+                </ul>
+                <img src="img/Logo.svg" alt="Logo AluraBooks" class="container__imagem">
+            </div>
+            <div class="container">
+            <!--<a href="#"><img src="img/Favoritos.svg" alt="Ícone coração" class="container__imagem"></a>
+            <a href="#"><img src="img/Compras.svg" alt="Ícone sacola" class="container__imagem"></a>
+            <a href="#"><img src="img/Usuário.svg" alt="Ícone usuário" class="container__imagem"></a>
+            </div>-->
+        </header>
+        <section class="banner">
+            <h2 class="banner__titulo">Quer me conhecer melhor?</h2>
+            <p class="banner__texto">Encontre na minha biografia o que precisa para me conhecer!</p>
+            <input type="search" class="banner__pesquisa" placeholder="Grandes conquistas">
+        </section>
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">FILMES FAVORITOS</h2>
+            <div class="swiper">
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src="img/rocky.jpg" alt="Rocky"></div>
+                  <div class="swiper-slide"><img src="img/creed.jpg" alt="Creed"></div>
+                  <div class="swiper-slide"><img src="img/batman.jpg" alt="Batman"></div>
+                  <div class="swiper-slide"><img src="img/moneyball.jpg" alt="Moneyball"></div>
+                </div>
+                <!-- If we need pagination -->
+              </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            autoplay: {
+                delay: 5000,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            }
+          });
+          </script>
+    </body>
+
+</html>
