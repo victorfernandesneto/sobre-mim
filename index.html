@@ -34,12 +34,32 @@
                         <a href="#" class="lista-menu__link">EXPERIÊNCIA PROFISSIONAL</a>
                     </li>
                 </ul>
+                <h1 class="container__titulo">Sobre <b class="container__titulo--negrito">Victor Fernandes Neto</b></h1>
             </div>
-            <div class="container">
-            <!--<a href="#"><img src="img/Favoritos.svg" alt="Ícone coração" class="container__imagem"></a>
-            <a href="#"><img src="img/Compras.svg" alt="Ícone sacola" class="container__imagem"></a>
-            <a href="#"><img src="img/Usuário.svg" alt="Ícone usuário" class="container__imagem"></a>
-            </div>-->
+
+            <ul class="opcoes">
+                <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+                <label for="opcoes-menu">
+                <li class="opcoes__item">CATEGORIAS</li>
+                </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">FILMES</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">ANIMES</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">BOXE</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">EXPERIÊNCIA PROFISSIONAL</a>
+                    </li>
+                </ul>
+
+                <li class="opcoes__item"><a href="#" class="opcoes__link">PESSOAL</a></li>
+                <li class="opcoes__item"><a href="#" class="opcoes__link">CONTATO</a></li>
+            </ul>
         </header>
         <section class="banner">
             <h2 class="banner__titulo">Quer me conhecer melhor?</h2>
@@ -61,9 +81,9 @@
                   <div class="swiper-slide"><img src="img/moneyball.jpg" alt="Moneyball"></div>
                 </div>
                 <!-- If we need pagination -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
               </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
         <div class="card">
             <!-- Primeira linha -->
             <div class="card__descricao">
@@ -159,13 +179,60 @@
             </ul>
         </section>
         <section class="contato">
-            <h2 class="contato__titulo">Me envie uma proposta de emprego!</h2>
-            <p class="contato__texto">Propostas de emprego, hate-mails, solicitações de amizade e outros.</p>
+            <div class="contato__descricao">
+                <h2 class="contato__titulo">Me envie uma proposta de emprego!</h2>
+                <p class="contato__texto">Propostas de emprego, hate-mails, solicitações de amizade e outros.</p>
+            </div>
             <input type="search" class="contato__input" placeholder="Cadastre seu e-mail">
         </section>
         <hr/>
         <footer class="rodape">
-            <p class="rodape__texto">Victor Fernandes Neto</p>
+            <p class="rodape__titulo">Victor Fernandes Neto</p>
+            <ul class="lista-rodape">
+                <li class="lista-rodape__titulo">Casual</li>
+                <li class="lista-rodape__item">
+                    <img src="img/spotify.png" alt="Spotify" class="item__img">
+                    <a href="#" class="item__link">Spotify</a>
+                </li>
+                <li class="lista-rodape__item">
+                    <img src="img/steam.png" alt="Steam" class="item__img">
+                    <a href="#" class="item__link">Steam</a>
+                </li>
+                <li class="lista-rodape__item">
+                    <img src="img/reddit.png" alt="Reddit" class="item__img">
+                    <a href="#" class="item__link">Reddit</a>
+                </li>
+            </ul>
+            <ul class="lista-rodape">
+                <li class="lista-rodape__titulo">Contato</li>
+                <li class="lista-rodape__item">
+                    <img src="img/whatsapp.png" alt="Whatsapp" class="item__img">
+                    <a href="#" class="item__link">Whatsapp</a>
+                </li>
+                <li class="lista-rodape__item">
+                    <img src="img/facebook.png" alt="Facebook" class="item__img">
+                    <a href="#" class="item__link">Facebook</a>
+                </li>
+                <li class="lista-rodape__item">
+                    <img src="img/email.png" alt="Email" class="item__img">
+                    <a href="#" class="item__link">E-mail</a>
+                </li>
+            </ul>
+            <ul class="lista-rodape">
+                <li class="lista-rodape__titulo">Redes sociais</li>
+                <li class="lista-rodape__item">
+                    <img src="img/instagram.png" alt="Instagram" class="item__img">
+                    <a href="#" class="item__link">Instagram</a>
+                </li>
+                <li class="lista-rodape__item">
+                    <img src="img/youtube.png" alt="Youtube" class="item__img">
+                    <a href="#" class="item__link">YouTube</a>
+                </li>
+                <li class="lista-rodape__item">
+                    <img src="img/discord.png" alt="Email" class="item__img">
+                    <a href="#" class="item__link">Discord</a>
+                </li>
+            </ul>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <script>
@@ -173,7 +240,7 @@
             spaceBetween: 10,
             slidesPerView: 3,
             autoplay: {
-                delay: 5000,
+                delay: 3000,
             },
             pagination: {
                 el: '.swiper-pagination',
