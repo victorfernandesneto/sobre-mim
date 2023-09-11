@@ -151,4 +151,8 @@
     .descricao__texto{
         margin-top: 2rem;
     }
+
+    .card{
+        width: 60%;
+    }
 }
