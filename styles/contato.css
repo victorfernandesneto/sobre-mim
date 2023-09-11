@@ -14,6 +14,7 @@
 
 .contato__texto{
     font-weight: 300;
+    margin-top: 1em;
 }
 
 .contato__input{
@@ -42,6 +43,7 @@
         flex-direction: row;
         justify-content: space-between;
         padding: 3em 7em;
+        align-items: center;
     }
 
     .contato__titulo{
@@ -62,5 +64,17 @@
 
     .contato__descricao{
         width: 50%;
+    }
+}
+
+@media screen and (min-width:1728px) {
+    .contato{
+        padding: 3em 25em;
+        height: 6rem;
+        align-items: center;
+    }
+
+    .contato__input::placeholder{
+        padding: 1em 3em;
     }
 }

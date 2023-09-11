@@ -44,3 +44,9 @@ hr{
         color: var(--laranja);
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .rodape{
+        padding: 3em 8em 3em 2em;
+    }
+}

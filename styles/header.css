@@ -72,10 +72,6 @@
 
 @media screen and (min-width: 1024px) {
     
-    .cabecalho{
-        align-items: center;
-    }
-    
     .container__titulo{
         font-family: var(--fonte2);
         font-size: 1.875rem;
