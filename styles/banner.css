@@ -33,7 +33,7 @@
     text-align: center;
     background: url("../img/Pesquisa.svg") no-repeat;
     background-position: 1em center;
-    padding-left: 1em;
+    padding-left: 2em;
 }
 
 @media screen and (min-width: 1024px) {

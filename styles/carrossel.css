@@ -76,7 +76,8 @@
 
 .card__botoes{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 5%;
     align-items: center;
     text-align: center;
     margin-top: 3%;
@@ -88,7 +89,7 @@
     background: var(--azul-gradiente);
     padding: .5em 1em;
     font-weight: 700;
-    width: 7.1rem;
+    width: auto;
     text-align: center;
 }
 
